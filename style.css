@@ -1,0 +1,19 @@
+/*Verde vivo (parte inferior direita):
+#00C060
+Verde intermediário (meio do degradê):
+#009060
+Azul petróleo escuro (parte superior esquerda):
+#004050
+Verde-azulado escuro (sombra de fundo):
+#006060
+*/
+
+body{
+    //background: url("./assets/bg.png") no-repeat 100% auto top center ;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-color: #004050;    
+    color:white;    
+}
