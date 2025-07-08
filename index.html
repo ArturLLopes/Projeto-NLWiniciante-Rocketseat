@@ -25,9 +25,9 @@
                 <h2 class="title">Assistente de Meta</h2>
                 <p>Pergunte sobre estratégias, build e muito mais para seus jogos favoritos!</p>
 
-                <form>
-                    <input type="password" placeholder="Informe a API KEy do Gemini" required>
-                    <select>
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEy do Gemini" required>
+                    <select id="gameSelect">
                         <option value="">Selecione um jogo</option>
                         <option value="TFT">TFT LoL</option>
                         <option value="League of Legends">League of Legends</option>
@@ -38,8 +38,8 @@
                         <option value="Fortnite">Fortnite</option>
                         <option value="Apex Legends">Apex Legends</option>                      
                     </select>
-                    <input type="text" placeholder="Ex: Melhor build...">
-                    <button>Perguntar</button>
+                    <input id="questionInput" type="text" placeholder="Ex: Melhor build...">
+                    <button id="askButton">Perguntar</button>
                 </form>
 
                 <div id="aiResponse">
@@ -50,8 +50,8 @@
                 </div>
             </div>
         </section>
-
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
