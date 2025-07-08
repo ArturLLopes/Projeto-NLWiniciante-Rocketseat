@@ -6,6 +6,8 @@ Azul petróleo escuro (parte superior esquerda):
 #004050
 Verde-azulado escuro (sombra de fundo):
 #006060
+branco logo
+#F5EFD7
 */
 
 body{
@@ -15,7 +17,7 @@ body{
     background-size: 100vw 100vh;
     background-position: top center;
     background-color:rgb(35, 168, 101); 
-    color:white;  
+    color: #f8f1db;  
 
 }
 
@@ -26,8 +28,62 @@ body *, :root {
 
 header{
     padding-top: -20px;
+    text-align: center;
 }
 
 header img{
-    width: 25rem;
+    width: 40rem;
+    height: 27rem;    
+    display: block;
+    margin: 0 auto;  
+}
+
+main{
+    max-width: 33rem;
+    white: 90%;
+    margin: 0 auto;
+    
+}
+section{
+    background-image: linear-gradient(90deg, #00c060 0%, #004050 50%, #006060 100%);
+    border-radius: 0.625rem;
+    padding-top: 4px;
+    
+}
+section > div {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #009060;
+
+}
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: white;
+}
+
+
+/*Animação*/
+
+main section{
+    opacity: 0;
+    transform: translatey(2rem);
+    animation-name: appear;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }
+
 }
