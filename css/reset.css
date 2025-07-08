@@ -1,0 +1,70 @@
+/* Box Sizing Padrão */
+html {
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura do elemento */
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* Todos os elementos herdam o box-sizing do html */
+}
+
+/* Remoção de Margens e Paddings Padrão */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+figure,
+figcaption,
+hr,
+fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset de Listas */
+ol, ul {
+    list-style: none; /* Remove marcadores de lista padrão */
+}
+
+/* Reset de Links */
+a {
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: inherit; /* Links herdam a cor do texto pai */
+}
+
+/* Reset de Imagens e Mídias */
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%; /* Garante que imagens e mídias sejam responsivas */
+    display: block; /* Remove o espaço extra abaixo de imagens (inline por padrão) */
+}
+
+/* Reset de Formulários */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* Elementos de formulário herdam a fonte do pai */
+    font-size: 100%; /* Garante que o tamanho da fonte não seja alterado */
+    line-height: 1.15; /* Consistência no line-height */
+    margin: 0; /* Remove margens padrão */
+}
+
+button {
+    /* Alguns resets específicos para botões */
+    -webkit-appearance: button; /* Corrige estilo em alguns navegadores */
+}
+
+/* Remoção de Outline em Foco (use com cautela para acessibilidade) */
+/* Remover outlines pode prejudicar a acessibilidade para usuários de teclado. */
+/* É melhor estilizar o outline de forma personalizada em vez de removê-lo completamente. */
+/* Exemplo de como *não* fazer (se remover, forneça um estado de foco alternativo): */
+/*
+*:focus {
+    outline: none;
+}
+*/
