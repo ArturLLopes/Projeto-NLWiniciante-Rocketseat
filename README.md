@@ -28,6 +28,7 @@ A aplicação apresenta uma landing page moderna com design inspirado no univers
 - Manipulação básica do DOM com JavaScript
 
 ---
+![Preview da Página](https://github.com/user-attachments/assets/85a5bbf7-7327-4a6f-9978-62ed9f7c73f3)
 
 ## ✨ Funcionalidades
 
@@ -146,15 +147,6 @@ nlw-esports/
 
 ---
 
-## 🎯 Próximos Passos
-
-- [ ] Implementar modo escuro/claro
-- [ ] Adicionar mais animações micro-interações
-- [ ] Integrar com API para dados dinâmicos
-- [ ] Implementar PWA (Progressive Web App)
-- [ ] Adicionar testes automatizados
-
----
 
 ## 🤝 Contribuindo
 
@@ -168,12 +160,8 @@ Contribuições são sempre bem-vindas! Para contribuir:
 
 ---
 
-## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
 
 ## 👨‍💻 Autor
 
-Desenvolvido com 💜 durante a **Next Level We
+Desenvolvido com 💜 durante a **Next Level Week
