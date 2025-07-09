@@ -10,127 +10,153 @@ branco logo
 #F5EFD7
 */
 
-body{
-    //background: url("./assets/bg.png") no-repeat 100% auto top center ;
-    background-image: url("../assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-position: top center;
-    background-color:rgb(35, 168, 101); 
-    color: #f8f1db;  
-
+body {
+  //background: url("./assets/bg.png") no-repeat 100% auto top center ;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: top center;
+  background-color: rgb(35, 168, 101);
+  color: #f8f1db;
 }
 
-body *, :root {
-    font-family: "Inter";
-    line-height: 160%;
+body *,
+:root {
+  font-family: "Inter";
+  line-height: 160%;
+  font-size: 1.25rem;
 }
 
-header{
-    padding-top: -20px;
-    text-align: center;
+header {
+  padding-top: 1rem;
+  text-align: center;
 }
 
-header img{
-    width: 40rem;
-    height: 27rem;    
-    display: block;
-    margin: 0 auto;  
+header img {
+  padding-bottom: 1rem;
+  width: 32rem;
+  height: 20rem;
+  display: block;
+  margin: 0 auto;
 }
 
-main{
-    max-width: 33rem;
-    white: 90%;
-    margin: 0 auto;
-    
+main {
+  max-width: 33rem;
+  white: 90%;
+  margin: 0 auto;
 }
-section{
-    background-image: linear-gradient(90deg, #00c060 0%, #004050 50%, #006060 100%);
-    border-radius: 0.625rem;
-    padding-top: 4px;
-    
+section {
+  background-image: linear-gradient(
+    90deg,
+    #00c060 0%,
+    #004050 50%,
+    #006060 100%
+  );
+  border-radius: 0.625rem;
+  padding-top: 4px;
 }
 section > div {
-    padding: 2rem;
-    padding-top: 1.5rem;
-    border-radius: 0.5rem;
-    background-color: #009060;
-
+  padding: 2rem;
+  padding-top: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #009060;
 }
 section h2 {
-    letter-spacing: -0.47px;
+  letter-spacing: -0.47px;
 }
 
 section p {
-    letter-spacing: -0.18px;
-    color: white;
+  letter-spacing: -0.18px;
+  color: white;
 }
-
 
 /*Animação*/
 
-main section{
-    opacity: 0;
-    transform: translatey(2rem);
-    animation-name: appear;
-    animation-duration: 700ms;
-    animation-fill-mode: forwards;
+main section {
+  opacity: 0;
+  transform: translatey(2rem);
+  animation-name: appear;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
 }
 
-@keyframes appear{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: translatey(0);
-    }
-
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }
 
 /*Formulario*/
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
 }
 
-input, select {
-    all: unset;  
-    border: 2px solid #004050;
-    border-radius:0.5rem;
-    padding: 1rem;
-    font-size: 0.875rem;
-    background-color:rgba(0, 96, 96, 0.77);
-    color: white;
+input,
+select {
+  all: unset;
+  border: 2px solid #004050;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  background-color: rgba(0, 96, 96, 0.77);
+  color: white;
 }
-input{
-    flex:1;
+input {
+  flex: 1;
 }
 input::placeholder {
-    color:white;
+  color: white;
 }
 
-button{
-    white:100%;
-    border:0;
-     background-image: linear-gradient(90deg, #00c060 0%, #004050 50%, #006060 100%);
-     padding: 1rem;
-    border-radius: 0.5rem;
-    color: #f8f1db; 
-    font-size: 2.2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 5px; 
-    transition:all 0.3s;
+button {
+  white: 100%;
+  border: 0;
+  background-image: linear-gradient(
+    90deg,
+    #00c060 0%,
+    #004050 50%,
+    #006060 100%
+  );
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #f8f1db;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition: all 0.3s;
 }
 
-button:hover{
-    cursor: pointer;
-    transform: translatey(5px);
-    box-shadow: 0 4px 15px rgba(0, 64, 80, 0.3); 
+button:hover {
+  cursor: pointer;
+  transform: translatey(5px);
+  box-shadow: 0 4px 15px rgba(0, 64, 80, 0.3);
+}
 
-  
-
+button:disabled {
+  transition: none;
+  transform: translatey(0);
+  box-shadow: initial;
+  cursor: not-allowed;
+}
+.loading {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
